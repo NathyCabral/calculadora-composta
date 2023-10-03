@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juros Composto</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="imagem/png" href="./img/icon" />
+  </head>
+  <body>
+    <main id="container">
+      <section id="calculator">
+        
+        <h1>Calculadora de Juros Composto</h1>
+
+        <div class="input-box">
+          <div class="campo">
+            <label for="capitalInicial">Valor Inicial (Capital):</label>
+            <input type="number" id="capitalInicial" />
+          </div>
+
+          <div class="campo">
+            <label for="taxaJuros">Taxa de Juros Anual (%):</label>
+            <input type="number" id="taxaJuros" />
+          </div>
+
+          <div class="campo">
+            <label for="periodo">Período de Investimento (anos):</label>
+            <input type="number" id="periodo" />
+          </div>
+
+          <button onclick="calcularInvestimento()">Calcular</button>
+
+          <p>Resultado:</p>
+          <p id="resultadoNumero"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
